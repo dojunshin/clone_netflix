@@ -10,6 +10,7 @@ import { Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
 import Moviepage from './pages/Movies/Moviepage'
+
 //홈페이지                    주소 : /
 //영화 전체보여주는 페이지(서치)   주소 : /movies
 //영화 디테일 페이지            주소 : /movies/:id

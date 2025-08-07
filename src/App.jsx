@@ -9,7 +9,7 @@ import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 import { Routes, Route } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react'
-import Moviepage from './pages/Movies/Moviepage'
+import Moviepage from './pages/Movies/MoviePage'
 
 //홈페이지                    주소 : /
 //영화 전체보여주는 페이지(서치)   주소 : /movies

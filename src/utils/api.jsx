@@ -3,10 +3,12 @@ import axios from "axios";
 const API_KEY = import.meta.env.VITE_API_KEY
 
 const api = axios.create({
-    baseURL: "/api",//"https://api.themoviedb.org/3",
+    baseURL: 'https://api.themoviedb.org/3',//"/api",//"https://api.themoviedb.org/3",
     headers: {
         Acceept: "application/json",
-        Authorization:`Bearer ${API_KEY}`
+        Authorization: `Bearer ${import.meta.env.VITE_API_KEY}`,
+        'Content-Type': 'application/json'
+        // Authorization:`Bearer ${API_KEY}`
     }
 })
 

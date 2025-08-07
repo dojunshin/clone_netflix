@@ -1,0 +1,58 @@
+.pagination .page-link {
+  color: red !important;           /* 글자색: 빨간색 */
+  background-color: black !important; /* 배경색: 검은색 */
+  border-color: #333 !important;  /* 테두리색 */
+}
+
+.pagination .page-link:hover {
+  color: white !important;         /* 호버 시 글자색 */
+  background-color: #333 !important; /* 호버 시 배경색 */
+}
+
+.pagination .page-item.active .page-link {
+  color: white !important;         /* 활성 페이지 글자색 */
+  background-color: red !important;  /* 활성 페이지 배경색 */
+  border-color: red !important;
+}
+
+.filter-section {
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+.filter-section h5 {
+  color: #ffffff !important;
+}
+
+.filter-section .form-label {
+  color: #ffffff !important;
+}
+
+.filter-section .form-select {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+.filter-section .form-select option {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.filter-section .btn-outline-light {
+  border-color: #ffffff !important;
+  color: #ffffff !important;
+}
+
+.filter-section .btn-outline-light:hover {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+.filter-summary {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}

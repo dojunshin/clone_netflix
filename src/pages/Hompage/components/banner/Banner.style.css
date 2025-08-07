@@ -1,4 +1,4 @@
-.banner {
+/* .banner {
     height:56vh;
     width: 100%;
     background-position: center;
@@ -25,4 +25,83 @@
 
 .banner-text-area > * {
     z-index: 2;
+} */
+/* Banner.style.css */
+.banner {
+  position: relative;
+  height: 400px; /* 고정 높이 */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* 넘치는 텍스트 숨김 */
+}
+
+.banner-text-area {
+  padding: 2rem;
+  max-width: 50%;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  /* 제목이 너무 길 경우 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.banner-overview {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  /* 텍스트 라인 제한 */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 3줄로 제한 */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+  .banner {
+    height: 300px; /* 모바일에서 높이 줄임 */
+  }
+  
+  .banner-text-area {
+    max-width: 80%;
+    padding: 1rem;
+  }
+  
+  .banner-title {
+    font-size: 1.8rem;
+    -webkit-line-clamp: 1; /* 모바일에서는 1줄로 */
+  }
+  
+  .banner-overview {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 2; /* 모바일에서는 2줄로 */
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 250px;
+  }
+  
+  .banner-text-area {
+    max-width: 90%;
+    padding: 0.8rem;
+  }
+  
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  
+  .banner-overview {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+  }
 }

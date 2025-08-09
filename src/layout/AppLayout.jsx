@@ -56,7 +56,7 @@ const AppLayout = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <div style={{minHeight:'100vh' , background:'#000'}}>
+      <div style={{minHeight:'100vh', height:'100vh', background:'#000'}}>
         <Outlet/>
       </div>
     </div>

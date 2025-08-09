@@ -60,6 +60,7 @@
   display: -webkit-box;
   -webkit-line-clamp: 3; /* 3줄로 제한 */
   -webkit-box-orient: vertical;
+  max-height: 4.8rem;
   overflow: hidden;
   text-overflow: ellipsis;
 }
